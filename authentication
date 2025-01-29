@@ -1,0 +1,12 @@
+## Authentication API Overview
+All requests to the API need to be accompanied by an authorization header with an authentication token:
+
+```bash
+Authorization: Bearer 212LJ3k0i2382364HIUEjfeJB98yvH
+```
+Authentication tokens are generated via the authentication endpoint and expire within 1 hour. They need to be then regenerated. If you’re using our JavaScript SDK, this is automatically handled for you.
+
+There are two main token types available for use within your store client_credentials and implicit. The implicit token is the more limited of the two, restricting access to mostly read-only, whereas client credential token has full read and write access.
+
+
+
